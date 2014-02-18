@@ -11,8 +11,8 @@ local git_branch='$(git_prompt_info)%{$reset_color%}'
 local job="%(1j.$pB$pfg_red%j.)$pR"
 
 #PROMPT="${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
-PROMPT="┏━%(2L.⊂.)${user_host} ${current_dir}
-┗${job}$pB$pfg_blue▶$pR"
+PROMPT="${current_dir}
+${job}$pB$pfg_green\$$pR "
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
