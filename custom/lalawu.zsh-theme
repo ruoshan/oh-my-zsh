@@ -11,7 +11,7 @@ local git_branch='$(git_prompt_info)%{$reset_color%}'
 local job="%(1j.$pB$pfg_red%j.)$pR"
 
 #PROMPT="${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
-PROMPT="${current_dir}
+PROMPT="${current_dir}${git_branch}
 ${job}$pB$pfg_green\$$pR "
 RPS1="${return_code}"
 
